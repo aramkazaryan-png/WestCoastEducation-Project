@@ -1,0 +1,28 @@
+using System;
+
+public class Studerande
+{
+    public string Fornamn { get; set; }
+    public string Efternamn { get; set; }
+    public string Telefon { get; set; }
+    public string Personnummer { get; set; }
+    public string Adress { get; set; }
+    public string Postnummer { get; set; }
+    public string Ort { get; set; }
+
+    public Studerande(string fornamn, string efternamn, string telefon, string personnummer, string adress, string postnummer, string ort)
+    {
+        Fornamn = fornamn;
+        Efternamn = efternamn;
+        Telefon = telefon;
+        Personnummer = personnummer;
+        Adress = adress;
+        Postnummer = postnummer;
+        Ort = ort;
+    }
+
+    public string Presentera()
+    {
+        return $"{Fornamn} {Efternamn}, Tel: {Telefon}, Personnummer: {Personnummer}, Adress: {Adress}, {Postnummer} {Ort}";
+    }
+}
