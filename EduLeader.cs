@@ -1,6 +1,6 @@
 using System;
 
-public class Utbildningsledare
+public class EduLeader
 {
     public string Fornamn { get; set; }
     public string Efternamn { get; set; }
@@ -12,7 +12,7 @@ public class Utbildningsledare
     public string Kunskapsomrade { get; set; }
     public DateTime Anstallningsdatum { get; set; }
 
-    public Utbildningsledare(string fn, string en, string tel, string pn, string adr, string post, string ort, string omrade, DateTime anstallning)
+    public EduLeader(string fn, string en, string tel, string pn, string adr, string post, string ort, string omrade, DateTime anstallning)
     {
         Fornamn = fn;
         Efternamn = en;
